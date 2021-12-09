@@ -6,8 +6,8 @@
   "scripts": {
     "eslint:fix": "eslint . --fix --ignore-path .gitignore",
     "eslint:check": "eslint . --ignore-path .gitignore",
-    "format:fix": "prettier --write . --ignore-path .gitignore",
-    "format:check": "prettier --check . --ignore-path .gitignore",
+    "format:fix": "prettier --write . --ignore-path .gitignore --ignore-path .prettierignore",
+    "format:check": "prettier --check . --ignore-path .gitignore --ignore-path .prettierignore",
     "stylelint:fix": "stylelint \"**/*.css\" --fix --ignore-path .gitignore",
     "stylelint:check": "stylelint \"**/*.css\" --ignore-path .gitignore",
     "all:fix": "npm run eslint:fix && npm run format:fix && npm run stylelint:fix",
